@@ -268,17 +268,17 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30">
                             <!-- Login Form s-->
-                            <form action="#" >
+                            <form id="form-login" >
                                 <div class="login-form">
                                     <h4 class="login-title">Đăng nhập</h4>
                                     <div class="row">
                                         <div class="col-md-12 col-12 mb-20">
                                             <label>Email*</label>
-                                            <input class="mb-0" type="email" placeholder="Nhập Email">
+                                            <input id="email-login-input" class="mb-0" type="email" placeholder="Nhập Email">
                                         </div>
                                         <div class="col-12 mb-20">
                                             <label>Mật khẩu</label>
-                                            <input class="mb-0" type="password" placeholder="Nhập Mật khẩu">
+                                            <input id="password-login-input" class="mb-0" type="password" placeholder="Nhập Mật khẩu">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="check-box d-inline-block ml-0 ml-md-2 mt-10">
@@ -290,7 +290,7 @@
                                             <a href="#"> Quên mật khẩu?</a>
                                         </div>
                                         <div class="col-md-12">
-                                            <button class="register-button mt-0">Đăng nhập</button>
+                                            <button type="submit" class="register-button mt-0">Đăng nhập</button>
                                         </div>
                                     </div>
                                 </div>
@@ -302,12 +302,8 @@
                                     <h4 class="login-title">Đăng ký</h4>
                                     <div class="row">
                                         <div class="col-md-6 col-12 mb-20">
-                                            <label>Họ đệm</label>
-                                            <input class="mb-0" type="text" placeholder="Họ đệm">
-                                        </div>
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Tên</label>
-                                            <input class="mb-0" type="text" placeholder="Tên">
+                                            <label>Họ tên</label>
+                                            <input id="name-input" class="mb-0" type="text" placeholder="Họ đệm">
                                         </div>
                                         <div class="col-md-12 mb-20">
                                             <label>Email*</label>
@@ -481,6 +477,8 @@
         <script src="js/scrollUp.min.js"></script>
         <!-- Main/Activator js -->
         <script src="js/main.js"></script>
+
+        <script src="js/callapi/RegisterAPI.js"></script>
     </body>
 
 <!-- login-register31:27-->
