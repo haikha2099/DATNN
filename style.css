@@ -381,7 +381,7 @@ textarea:focus {
 /*----------------------------------------*/
 /*Home One | Slider Background Image*/
 .bg-1, .bg-2, .bg-3 {
-	background-image: url(images/slider/7.jpg);
+	background-image: url(images/data/ke_tv_kinh_5.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -389,10 +389,10 @@ textarea:focus {
 	width: 100%;
 }
 .bg-2 {
-	background-image: url(images/slider/17.jpg);
+	background-image: url(images/data/ban_an_1.jpg);
 }
 .bg-3 {
-	background-image: url(images/slider/16.jpg);
+	background-image: url(images/data/ban_ghe_7.jpg);
 }
 /*Home Two | Slider Background Image*/
 .bg-4, .bg-5, .bg-6 {
@@ -3058,8 +3058,8 @@ text-align: center;
 	font-family: fontawesome;
 }
 .category-heading > h2 > i {
-	float: ;
-	text-align: ;
+	float: left ;
+	text-align: center;
 	float: right;
 	padding-right: 20px;
 	font-size: 12px;

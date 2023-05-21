@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Trang chủ</title>
+    <title>Nội Thất Hải Ninh</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/icon.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="images/data/ban_an_1.jpg">
     <!-- Material Design Iconic Font-V2.2.0 -->
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
     <!-- Font Awesome -->
@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Modernizr js -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -62,14 +63,22 @@
                                     <!-- Begin Setting Area -->
                                     <li>
                                         <div class="ht-setting-trigger"><span>Cài đặt</span></div>
-                                        <div class="setting ht-setting">
+                                        <div class="setting ht-setting" id="show_setting">
                                             <ul class="ht-setting-list">
-                                                <li><a href="login-register.html">Tài khoản</a></li>
-                                                <li><a href="checkout.html">Thanh toán</a></li>
-                                                <li><a href="login-register.html">Đăng Nhập</a></li>
+                                                <li><a href="login-register.html">Đăng Nhập/Đăng Ký</a></li>
                                             </ul>
                                         </div>
                                     </li>
+                                </ul>
+                                <ul class="ht-menu" id ="username_show">
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header-top-right">
+                                <ul id ="username_show">
+                                    <li></li>
                                 </ul>
                             </div>
                         </div>
@@ -82,134 +91,29 @@
                         <div class="col-lg-3">
                             <div class="logo pb-sm-30 pb-xs-30">
                                 <a href="index.html">
-                                    <img style=" width: 200px; height: 40px; " src="images/menu/logo/logo_2.png" alt="">
+                                    <img style=" width: 200px; height: 40px; " src="images/menu/logo/logo4.png" alt="">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
                             <form action="#" class="hm-searchbox">
-                                <select class="nice-select select-search-category">
-                                    <option value="0">Tất cả</option>
-                                    <option value="10">Makita</option>
-                                    <option value="17">- - Máy pin</option>
-                                    <option value="20">- - - - All Videos</option>
-                                    <option value="21">- - - - Blouses</option>
-                                    <option value="22">- - - - Evening Dresses</option>
-                                    <option value="23">- - - - Summer Dresses</option>
-                                    <option value="24">- - - - T-shirts</option>
-                                    <option value="25">- - - - Rent or Buy</option>
-                                    <option value="26">- - - - Your Watchlist</option>
-                                    <option value="27">- - - - Watch Anywhere</option>
-                                    <option value="28">- - - - Getting Started</option>
-                                    <option value="18">- - - - Computers</option>
-                                    <option value="29">- - - - More to Explore</option>
-                                    <option value="30">- - - - TV &amp; Video</option>
-                                    <option value="31">- - - - Audio &amp; Theater</option>
-                                    <option value="32">- - - - Camera, Photo </option>
-                                    <option value="33">- - - - Cell Phones</option>
-                                    <option value="34">- - - - Headphones</option>
-                                    <option value="35">- - - - Video Games</option>
-                                    <option value="36">- - - - Wireless Speakers</option>
-                                    <option value="19">- - - - Electronics</option>
-                                    <option value="37">- - - - Amazon Home</option>
-                                    <option value="38">- - - - Kitchen &amp; Dining</option>
-                                    <option value="39">- - - - Furniture</option>
-                                    <option value="40">- - - - Bed &amp; Bath</option>
-                                    <option value="41">- - - - Appliances</option>
-                                    <option value="11">Bosch</option>
-                                    <option value="42">- - Chamcham</option>
-                                    <option value="45">- - - - Office</option>
-                                    <option value="47">- - - - Gaming</option>
-                                    <option value="48">- - - - Chromebook</option>
-                                    <option value="49">- - - - Refurbished</option>
-                                    <option value="50">- - - - Touchscreen</option>
-                                    <option value="51">- - - - Ultrabooks</option>
-                                    <option value="52">- - - - Blouses</option>
-                                    <option value="43">- - Sanai</option>
-                                    <option value="53">- - - - Hard Drives</option>
-                                    <option value="54">- - - - Graphic Cards</option>
-                                    <option value="55">- - - - Processors (CPU)</option>
-                                    <option value="56">- - - - Memory</option>
-                                    <option value="57">- - - - Motherboards</option>
-                                    <option value="58">- - - - Fans &amp; Cooling</option>
-                                    <option value="59">- - - - CD/DVD Drives</option>
-                                    <option value="44">- - Meito</option>
-                                    <option value="60">- - - - Sound Cards</option>
-                                    <option value="61">- - - - Cases &amp; Towers</option>
-                                    <option value="62">- - - - Casual Dresses</option>
-                                    <option value="63">- - - - Evening Dresses</option>
-                                    <option value="64">- - - - T-shirts</option>
-                                    <option value="65">- - - - Tops</option>
-                                    <option value="12">DCA</option>
-                                    <option value="66">- - Camera Accessories</option>
-                                    <option value="68">- - - - Octa Core</option>
-                                    <option value="69">- - - - Quad Core</option>
-                                    <option value="70">- - - - Dual Core</option>
-                                    <option value="71">- - - - 7.0 Screen</option>
-                                    <option value="72">- - - - 9.0 Screen</option>
-                                    <option value="73">- - - - Bags &amp; Cases</option>
-                                    <option value="67">- - XailStation</option>
-                                    <option value="74">- - - - Batteries</option>
-                                    <option value="75">- - - - Microphones</option>
-                                    <option value="76">- - - - Stabilizers</option>
-                                    <option value="77">- - - - Video Tapes</option>
-                                    <option value="78">- - - - Memory Card Readers</option>
-                                    <option value="79">- - - - Tripods</option>
-                                    <option value="13">FEG</option>
-                                    <option value="14">Husvana</option>
-                                    <option value="15">...</option>
-                                    <option value="16">...</option>
-                                </select>
                                 <input type="text" placeholder="Nhập từ khóa ...">
                                 <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                             <div class="header-middle-right">
                                 <ul class="hm-menu">
                                     <li class="hm-wishlist">
-                                        <a href="wishlist.html">
-                                            <span class="cart-item-count wishlist-item-count">3</span>
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
                                     </li>
                                     <li class="hm-minicart">
                                         <div class="hm-minicart-trigger">
                                             <span class="item-icon"></span>
-                                            <span class="item-text">6.489.000đ
-                                                <span class="cart-item-count">2</span>
+                                            <span class="item-text">Giỏ hàng
+                                                <span class="cart-item-count"></span>
                                             </span>
                                         </div>
                                         <span></span>
                                         <div class="minicart">
-                                            <ul class="minicart-product-list">
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/large-size/products/1.jpg"
-                                                            style="width: 50px; height:35px;" alt="">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Máy vặn vít</a></h6>
-                                                        <span>3.499.000đ x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/large-size/products/2.png"
-                                                            style="width: 50px; height:35px;" alt="">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Máy cắt tôn</a></h6>
-                                                        <span>2.999.000đ x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <p class="minicart-total">Tổng tiền: <span>6.489.000đ</span></p>
                                             <div class="minicart-button">
                                                 <a href="shopping-cart.html"
                                                     class="li-button li-button-fullwidth li-button-dark">
@@ -245,49 +149,9 @@
                                         <li><a href="about-us.html">Giới thiệu</a>
                                         </li>
                                         <li class="dropdown-holder"><a href="shop-left-sidebar.html">Sản phẩm</a>
-                                            <ul class="hb-dropdown">
-                                                <li class="sub-dropdown-holder"><a
-                                                        href="shop-left-sidebar.html">MAKITA</a>
-                                                    <ul class="hb-dropdown hb-sub-dropdown">
-                                                        <li><a href="shop-3-column.html">Dụng cụ pin</a></li>
-                                                        <li><a href="shop-3-column.html">Máy khoan/vặn vít</a></li>
-                                                        <li><a href="shop-3-column.html">Máy mài/máy chà</a></li>
-                                                        <li><a href="shop-3-column.html">Máy cưa/máy cắt</a></li>
-                                                        <li><a href="shop-3-column.html">Máy Bào/máy phay</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-dropdown-holder"><a
-                                                        href="shop-left-sidebar.html">BOSCH</a>
-                                                    <ul class="hb-dropdown hb-sub-dropdown">
-                                                        <li><a href="shop-3-column.html">Dụng cụ pin</a></li>
-                                                        <li><a href="shop-3-column.html">Máy khoan/vặn vít</a></li>
-                                                        <li><a href="shop-3-column.html">Máy mài/máy chà</a></li>
-                                                        <li><a href="shop-3-column.html">Máy cưa/máy cắt</a></li>
-                                                        <li><a href="shop-3-column.html">Máy Bào/máy phay</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-dropdown-holder"><a href="shop-left-sidebar.html">DCA</a>
-                                                    <ul class="hb-dropdown hb-sub-dropdown">
-                                                        <li><a href="shop-3-column.html">Dụng cụ pin</a></li>
-                                                        <li><a href="shop-3-column.html">Máy khoan/vặn vít</a></li>
-                                                        <li><a href="shop-3-column.html">Máy mài/máy chà</a></li>
-                                                        <li><a href="shop-3-column.html">Máy cưa/cắt</a></li>
-                                                        <li><a href="shop-3-column.html">Máy Bào/máy phay</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="sub-dropdown-holder"><a href="shop-left-sidebar.html">FEG</a>
-                                                    <ul class="hb-dropdown hb-sub-dropdown">
-                                                        <li><a href="shop-3-column.html">Dụng cụ pin</a></li>
-                                                        <li><a href="shop-3-column.html">Máy khoan/vặn vít</a></li>
-                                                        <li><a href="shop-3-column.html">Máy mài/máy chà</a></li>
-                                                        <li><a href="shop-3-column.html">Máy cưa/máy cắt</a></li>
-                                                        <li><a href="shop-3-column.html">Máy Bào/máy phay</a></li>
-                                                    </ul>
-                                                </li>
+                                            <ul class="hb-dropdown" id="list_category">
                                             </ul>
                                         </li>
-                                        <li><a href="blog-3-column.html">Tin tức</a></li>
-
                                         <li><a href="contact.html">Liên hệ</a></li>
                                     </ul>
                                 </nav>
@@ -314,8 +178,8 @@
                                 <div class="single-slide align-center-left  animation-style-01 bg-1">
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
-                                        <h2>MAKITA</h2>
-                                        <h5>Sản phẩm chất lượng, chính hãng.</h5>
+                                        <h2>HNStore</h2>
+                                        <h5>Vì ngôi nhà của bạn!</h5>
                                         <!-- <h3>Starting at <span>$1209.00</span></h3> -->
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="shop-left-sidebar.html">Mua hàng ngay</a>
@@ -325,8 +189,8 @@
                                 <div class="single-slide align-center-left animation-style-02 bg-2">
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
-                                        <h2>BOSCH</h2>
-                                        <h5>Sản phẩm chất lượng, chính hãng.</h5>
+                                        <h2>HNStore</h2>
+                                        <h5>Vì ngôi nhà của bạn!</h5>
                                         <!-- <h3>Starting at <span>$1209.00</span></h3> -->
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="shop-left-sidebar.html">Mua hàng ngay</a>
@@ -336,8 +200,8 @@
                                 <div class="single-slide align-center-left animation-style-01 bg-3">
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
-                                        <h2>DCA</h2>
-                                        <h5>Sản phẩm chất lượng, chính hãng.</h5>
+                                        <h2>HNStore</h2>
+                                        <h5>Vì ngôi nhà của bạn!</h5>
                                         <!-- <h3>Starting at <span>$1209.00</span></h3> -->
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="shop-left-sidebar.html">Mua hàng ngay</a>
@@ -350,7 +214,7 @@
                     <div class="col-lg-4 col-md-4 text-center pt-xs-30">
                         <div class="li-banner">
                             <a href="#">
-                                <img style="height:230px; width: 370px ;" src="images/banner/1_6.jpg" alt="">
+                                <img style="height:230px; width: 370px ;" src="images/data/ban_ghe_5.jpg" alt="">
                             </a>
                             <div class="offer-text">
                                 <h6 style="color: white;">Giảm giá <span style="color: red;">-10%</span></h6>
@@ -360,7 +224,7 @@
                         </div>
                         <div class="li-banner mt-15 mt-sm-30 mt-xs-30">
                             <a href="#">
-                                <img style="height:230px; width: 370px ;" src="images/banner/1_7.jpg" alt="">
+                                <img style="height:230px; width: 370px ;" src="images/data/ke_tv_4.jpg" alt="">
                             </a>
                             <div class="offer-text">
                                 <h6 style="color: white;">Giảm giá <span style="color: red;">-10%</span></h6>
@@ -402,403 +266,139 @@
                 </div>
                 <div class="tab-content">
                     <div id="li-new-product" class="tab-pane active show" role="tabpanel">
-                        <div  class="row">
-                            <div id="list_new_pro" class="product-active owl-carousel">
-                                <div class="col-lg-12">
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/1.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper" id="list_new_pro">
+                              <div class="swiper-slide" >
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="single-product.html">
+                                            <img src="images\data\ban_an_1.jpg" alt="Li's Product Image">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="#" data-toggle="modal" data-target="#mymodal3">Ảnh sản
+                                                        phẩm</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+            
+                                            <!--  -->
+                                            <h4><a class="product_name" href="single-product.html">Bộ bàn ăn gỗ đào</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price">6.300.000</span>
+                                            </div>
                                         </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#" data-toggle="modal" data-target="#mymodal3">Ảnh sản
-                                                            phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-
-                                                <!--  -->
-                                                <h4><a class="product_name" href="single-product.html">Khoan bắt vít</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">3.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <!-- single-product-wrap end -->
                                 </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/2.png"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cắt tôn</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.999.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/1.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Khoan bắt vít</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">3.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/2.png"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cắt tôn</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.999.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/1.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Khoan bắt vít</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">3.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/2.png"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                            <span class="sticker">New</span>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cắt tôn</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.999.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--  -->
-        <div class="modal fade modal-wrapper" id="mymodal3">
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <ul>
-                            <li>
-                                <h3 class="review-page-title">Ảnh sản phẩm</h3>
-                                <button class="close1" title="Đóng">
-                                    <a href="#" class="fa fa-close" data-dismiss="modal"></a>
-                                </button>
-                            </li>
-                            <li> <!-- Product Details Left -->
-                                <div>
-                                    <div class="product-details-images slider-navigation-1">
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
+            <div class="modal fade modal-wrapper" id="mymodal3">
+                <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <ul>
+                                <li>
+                                    <h3 class="review-page-title">Ảnh sản phẩm</h3>
+                                    <button class="close1" title="Đóng">
+                                        <a href="#" class="fa fa-close" data-dismiss="modal"></a>
+                                    </button>
+                                </li>
+                                <li> <!-- Product Details Left -->
+                                    <div>
+                                        <div class="product-details-images slider-navigation-1">
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
+                                            <div class="lg-image">
+                                                <a>
+                                                    <img src="images/product/large-size/products/1.jpg"
+                                                        alt="product image">
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
-                                        </div>
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
-                                        </div>
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
-                                        </div>
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
-                                        </div>
-                                        <div class="lg-image">
-                                            <a>
-                                                <img src="images/product/large-size/products/1.jpg" alt="product image">
-                                            </a>
+                                        <div class="product-details-thumbs slider-thumbs-1">
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
+                                                    alt="product image thumb"></div>
                                         </div>
                                     </div>
-                                    <div class="product-details-thumbs slider-thumbs-1">
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/large-size/products/1.jpg"
-                                                alt="product image thumb"></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <!--// Product Details Left -->
+                                </li>
+                            </ul>
+                            <!--// Product Details Left -->
 
 
-                        <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--  -->
-        <!-- Product Area End Here -->
-        <!-- Begin Li's Static Banner Area -->
-        <div class="li-static-banner li-static-banner-4 text-center pt-20">
-            <div class="container">
-                <div class="row">
-                    <!-- Begin Single Banner Area -->
-                    <div class="col-lg-6">
-                        <div class="single-banner pb-sm-30 pb-xs-30">
-
-                            <!-- <img src="images/banner/1_8.jpg" alt="Li's Static Banner"> -->
-                            <iframe width="560" height="300" src="https://www.youtube-nocookie.com/embed/yGcO45wU93g"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-                    <!-- Single Banner Area End Here -->
-                    <!-- Begin Single Banner Area -->
-                    <div class="col-lg-6">
-                        <div class="single-banner">
-
-                            <!-- <img  height="300" src="images/banner/1_9.jpg" alt="Li's Static Banner"> -->
-                            <iframe width="560" height="315"
-                                src="https://www.youtube-nocookie.com/embed/7Ra6x1zx3hs?start=1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-                    <!-- Single Banner Area End Here -->
-                </div>
-            </div>
-        </div>
-        <!-- Li's Static Banner Area End Here -->
-        <!-- Begin Li's Static Banner Area -->
-        <!--  <div class="li-static-banner li-static-banner-4 text-center pt-20">
+            <!--  -->
+            <!-- Product Area End Here -->
+            <!-- Begin Li's Static Banner Area -->
+            <!-- Li's Static Banner Area End Here -->
+            <!-- Begin Li's Static Banner Area -->
+            <!--  <div class="li-static-banner li-static-banner-4 text-center pt-20">
                 <div class="container">
                     <div class="row">
                         
@@ -823,652 +423,511 @@
                     </div>
                 </div>
             </div> -->
-        <!-- Li's Static Banner Area End Here -->
-        <!-- Begin Li's Laptop Product Area -->
-        <section class="product-area li-laptop-product pt-60 pb-45">
-            <div class="container">
-                <div class="row">
-                    <!-- Begin Li's Section Area -->
-                    <div class="col-lg-12">
-                        <div class="li-section-title">
-                            <h2>
-                                <span>Sản phẩm nổi bật</span>
-                            </h2>
-                            <!-- <ul class="li-sub-category-list">
+            <!-- Li's Static Banner Area End Here -->
+            <!-- Begin Li's Laptop Product Area -->
+            <section class="product-area li-laptop-product pt-60 pb-45">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>Sản phẩm nổi bật</span>
+                                </h2>
+                                <!-- <ul class="li-sub-category-list">
                                     <li class="active"><a href="shop-left-sidebar.html">Prime Video</a></li>
                                     <li><a href="shop-left-sidebar.html">Computers</a></li>
                                     <li><a href="shop-left-sidebar.html">Electronics</a></li>
                                 </ul> -->
-                        </div>
-                        <div class="row">
-                            <div class="product-active owl-carousel">
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/3.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/4.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/5.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single-product-wrap end -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <!-- single-product-wrap start -->
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/6.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/7.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single-product-wrap">
-                                        <div class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="images/product/large-size/products/8.jpg"
-                                                    alt="Li's Product Image">
-                                            </a>
-
-                                        </div>
-                                        <div class="product_desc">
-                                            <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="#">Ảnh sản phẩm</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <h4><a class="product_name" href="single-product.html">Máy cưa gỗ</a>
-                                                </h4>
-                                                <div class="price-box">
-                                                    <span class="new-price">2.499.000đ</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-actions">
-                                                <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                    <li><a class="links-details" href="wishlist.html"><i
-                                                                class="fa fa-heart-o"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn"
-                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                                class="fa fa-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="li-static-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="single-banner shop-page-banner">
-                        <a href="#">
-                            <img src="images/bg-banner/2.png" alt="Li's Static Banner">
+                            <div class="row">
+                                <div class="product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/3.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
 
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="product-area li-laptop-product li-tv-audio-product pb-45">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="li-section-title">
-                        <h2>
-                            <span><br>Sản phẩm khuyến mãi</span>
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="special-product-active owl-carousel">
-                            <div class="col-lg-12">
-                                <!-- single-product-wrap start -->
-                                <div class="single-product-wrap">
-                                    <div class="product-image">
-                                        <a href="single-product.html">
-                                            <img src="images/product/large-size/products/9.jpg"
-                                                alt="Li's Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="product_desc">
-                                        <div class="product_desc_info">
-                                            <div class="product-review">
-                                                <h5 class="manufacturer">
-                                                    <a href="#">Ảnh sản phẩm</a>
-                                                </h5>
-                                                <div class="rating-box">
-                                                    <ul class="rating">
-                                                        <li><i class="fa fa-star-o"></i></li>
-                                                        <li><i class="fa fa-star-o"></i></li>
-                                                        <li><i class="fa fa-star-o"></i></li>
-                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <h4><a class="product_name" href="single-product.html">Máy cắt đa góc</a>
-                                            </h4>
-                                            <div class="price-box">
-                                                <span class="new-price">4.999.000đ</span>
-                                            </div>
-                                            <div class="countersection">
-                                                <div class="li-countdown"></div>
-                                            </div>
                                         </div>
-                                        <div class="add-actions">
-                                            <ul class="add-actions-link">
-                                                <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
-                                                <li><a class="links-details" href="wishlist.html"><i
-                                                            class="fa fa-heart-o"></i></a></li>
-                                                <li><a href="#" title="quick view" class="quick-view-btn"
-                                                        data-toggle="modal" data-target="#exampleModalCenter"><i
-                                                            class="fa fa-eye"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/4.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
 
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/5.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
+
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/6.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/7.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="images/product/large-size/products/8.jpg"
+                                                        alt="Li's Product Image">
+                                                </a>
+
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Ảnh sản phẩm</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Máy cưa
+                                                            gỗ</a>
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">2.499.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Thêm vào giỏ</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i
+                                                                    class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn"
+                                                                data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                    class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-static-middle">
+            <div class="container">
+                <div class="footer-logo-wrap pt-50 pb-35">
+                    <div class="row">
+                        <!-- Begin Footer Logo Area -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-logo">
+                                <img src="images/menu/logo/footer-logo-removebg-preview.png" style="width: 250px; height:70px;" alt="Footer Logo">
+                                <a class="footer-block-title"><br>NỘI THẤT HẢI NINH</a>
+                                <p class="info">
+                                    GP DKKD số:
+                                </p>
+                            </div>
+                            <ul class="des">
+                                <li>
+                                    <span>Địa chỉ: </span>
+                                    Thanh Trí, Minh Phú, Sóc Sơn, Hà Nội
+                                </li>
+                                <li>
+                                    <span>Phone: </span>
+                                    <a href="#">0348207338</a>
+                                </li>
+                                <li>
+                                    <span>Email: </span>
+                                    <a href="mailto://info@yourdomain.com">abccompany@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Logo Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Sản phẩm tiêu biểu</h3>
+                                <ul>
+                                    <li><a href="#">Bộ Bàn Ăn</a></li>
+                                    <li><a href="#">Bộ bàn ghế phòng khách</a></li>
+                                    <li><a href="#">Tủ</a></li>
+                                    <li><a href="#">Kệ tivi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Điều khoản/ chính sách</h3>
+                                <ul>
+                                    <li><a href="#" data-toggle="modal" data-target="#mymodal4">Bảo hành</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#mymodal5">Vận chuyển</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#mymodal6">Hướng dẫn mua hàng</a></li>
+                                    <li><a href="about-us.html">Giới thiệu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal fade modal-wrapper" id="mymodal4">
+                            <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>
+                                                <h3 class="review-page-title">Chính sách bảo hành </h3>
+                                                <button class="close1" title="Đóng">
+                                                    <a href="#" class="fa fa-close" data-dismiss="modal"></a>
+    
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="li-review-content">
+                                                        <div class="li-review-content">
+                                                            <h6>Thời gian bảo hành: <p>6 tháng-1 năm</p>
+                                                            </h6>
+                                                            <h6>Điều kiện bảo hành:</h6>
+                                                            <p>Sản phẩm còn thời gian bảo hành.</p>
+                                                            <p>Phiếu bảo hành còn nguên vẹn có chữ ký của cửa hàng, hoặc hóa đơn
+                                                                mua hàng.</p>
+                                                            <p>Chỉ bảo hành do lỗi của nhà sản xuất, sản phẩm rơi vỡ hư hỏng do
+                                                                lỗi của khách hàng sẽ từ chối bảo hành. </p>
+                                                            <p>Nhân viên bảo hành:Dương Hải Nam.</p>
+                                                            <p>Sđt hỗ trợ bh từ xa:0348207338.</p>
+                                                            <p>sđt xếp lịch bảo hành:0357369235.</p>
+                                                            <p>Địa chỉ bảo hành:Ngã 3 chợ Thanh Trí, Minh Phú, Sóc Sơn, Hà Nội.
+                                                            </p>
+        
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade modal-wrapper" id="mymodal5">
+                            <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>
+                                                <h3 class="review-page-title">Vận chuyển </h3>
+                                                <button class="close1" title="Đóng">
+                                                    <a href="#" class="fa fa-close" data-dismiss="modal"></a>
+    
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="li-review-content">
+                                                        <h6>Hỗ trợ vận chuyển 24/24.</h6>
+                                                        <p>Hỗ trợ vận chuyển đơn 24/24 với những đơn hàng trong khu vực Hà Nội.
+                                                        </p>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade modal-wrapper" id="mymodal6">
+                            <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>
+                                                <h3 class="review-page-title">Hướng dẫn mua hàng </h3>
+                                                <button class="close1" title="Đóng">
+                                                    <a href="#" class="fa fa-close" data-dismiss="modal"></a>
+    
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="li-review-content">
+                                                        <h6>Hỗ trợ mua hàng 24/7.</h6>
+                                                        <p>Nhân viên chăm sóc khách hàng : Dương Tuấn Anh.</p>
+                                                        <p>Sđt hỗ trợ :0377994597.</p>
+    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-4">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Theo dõi chúng tôi:</h3>
+                                <ul class="social-link">
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/" data-toggle="tooltip" target="_blank"
+                                            title="Twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="rss">
+                                        <a href="https://rss.com/" data-toggle="tooltip" target="_blank" title="RSS">
+                                            <i class="fa fa-rss"></i>
+                                        </a>
+                                    </li>
+                                    <li class="google-plus">
+                                        <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank"
+                                            title="Google Plus">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/profile.php?id=100033862597629"
+                                            data-toggle="tooltip" target="_blank" title="Facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank"
+                                            title="Youtube">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank"
+                                            title="Instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Begin Footer Newsletter Area -->
+    
+                            <!-- Footer Newsletter Area End Here -->
+                        </div>
+                        <!-- Footer Block Area End Here -->
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Begin Li's Static Banner Area -->
-    <div class="li-static-banner">
-        <div class="container">
-            <div class="row">
-                <!-- Begin Single Banner Area -->
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="single-banner">
-                        <a href="#">
-                            <img src="images/banner/1_8.png" alt="Li's Static Banner">
-                        </a>
-                    </div>
-                </div>
-                <!-- Single Banner Area End Here -->
-                <!-- Begin Single Banner Area -->
-                <div class="col-lg-4 col-md-4 text-center pt-xs-30">
-                    <div class="single-banner">
-                        <a href="#">
-                            <img src="images/banner/1_9.png" alt="Li's Static Banner">
-                        </a>
-                    </div>
-                </div>
-                <!-- Single Banner Area End Here -->
-                <!-- Begin Single Banner Area -->
-                <div class="col-lg-4 col-md-4 text-center pt-xs-30">
-                    <div class="single-banner">
-                        <a href="#">
-                            <img style="margin-top: 40px;" src="images/banner/2_0.png" alt="Li's Static Banner">
-                        </a>
-                    </div>
-                </div>
-                <!-- Single Banner Area End Here -->
-            </div>
-        </div>
-    </div>
-    <!-- Li's Static Banner Area End Here -->
+        <!-- Footer Static Middle Area End Here -->
 
-    <div class="footer-static-middle">
-        <div class="container">
-            <div class="footer-logo-wrap pt-50 pb-35">
-                <div class="row">
-                    <!-- Begin Footer Logo Area -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-logo">
-                            <img src="images/menu/logo/logo.png" style="width: 250px; height:70px;" alt="Footer Logo">
-                            <a class="footer-block-title"><br>ĐẠI LÝ THÂN NGUYỆT</a>
-                            <p class="info">
-                                GP DKKD số:
-                            </p>
-                        </div>
-                        <ul class="des">
-                            <li>
-                                <span>Địa chỉ: </span>
-                                Quỳnh Châu, Quỳnh Lưu, Nghệ An
-                            </li>
-                            <li>
-                                <span>Phone: </span>
-                                <a href="#">0966472629</a>
-                            </li>
-                            <li>
-                                <span>Email: </span>
-                                <a href="mailto://info@yourdomain.com">abccompany@gmail.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Footer Logo Area End Here -->
-                    <!-- Begin Footer Block Area -->
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="footer-block">
-                            <h3 class="footer-block-title">Sản phẩm tiêu biểu</h3>
-                            <ul>
-                                <li><a href="#">Dụng cụ pin</a></li>
-                                <li><a href="#">Máy khoan</a></li>
-                                <li><a href="#">Máy cắt</a></li>
-                                <li><a href="#">Máy cưa</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Block Area End Here -->
-                    <!-- Begin Footer Block Area -->
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <div class="footer-block">
-                            <h3 class="footer-block-title">Điều khoản/ chính sách</h3>
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#mymodal4">Bảo hành</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#mymodal5">Vận chuyển</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#mymodal6">Hướng dẫn mua hàng</a></li>
-                                <li><a href="about-us.html">Giới thiệu</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="modal fade modal-wrapper" id="mymodal4">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <ul>
-                                        <li>
-                                            <h3 class="review-page-title">Chính sách bảo hành </h3>
-                                            <button class="close1" title="Đóng">
-                                                <a href="#" class="fa fa-close" data-dismiss="modal"></a>
-
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <div class="li-review-content">
-                                                    <h6>Thời gian bảo hành: <p>6 tháng-1 năm</p>
-                                                    </h6>
-                                                    <h6>Điều kiện bảo hành:</h6>
-                                                    <p>Sản phẩm còn thời gian bảo hành.</p>
-                                                    <p>Phiếu bảo hành còn nguên vẹn có chữ ký của cửa hàng, hoặc hóa đơn
-                                                        mua hàng.</p>
-                                                    <p>Chỉ bảo hành do lỗi của nhà sản xuất, sản phẩm rơi vỡ hư hỏng do
-                                                        lỗi của khách hàng sẽ từ chối bảo hành. </p>
-                                                    <h6>Khuyến cáo sử dụng:</h6>
-                                                    <p>Sử dụng dây dẫn điện có tiết diện đảm bảo điện áp.</p>
-                                                    <p>Sử dụng đúng chức năng và đúng công suất của máy móc.</p>
-                                                    <p>Sử dụng phụ tùng và phụ kiện chính hãng để đảm bảo tuổi thọ.</p>
-                                                    <h6>Hỗ trợ bảo hành 24/24.</h6>
-                                                    <p>Nhân viên bảo hành:Chu Văn Long/Chu Văn Chung.</p>
-                                                    <p>Sđt hỗ trợ bh từ xa:0338799081.</p>
-                                                    <p>sđt xếp lịch bảo hành:0969904841.</p>
-                                                    <p>Địa chỉ bảo hành:Ql48, Tuần B, Quỳnh Châu, Quỳnh Lưu, Nghệ An.
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade modal-wrapper" id="mymodal5">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <ul>
-                                        <li>
-                                            <h3 class="review-page-title">Vận chuyển </h3>
-                                            <button class="close1" title="Đóng">
-                                                <a href="#" class="fa fa-close" data-dismiss="modal"></a>
-
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <div class="li-review-content">
-                                                    <h6>Thời gian bảo hành: <p>6 tháng-1 năm</p>
-                                                    </h6>
-                                                    <h6>Điều kiện bảo hành:</h6>
-                                                    <p>Sản phẩm còn thời gian bảo hành.</p>
-                                                    <p>Phiếu bảo hành còn nguên vẹn có chữ ký của cửa hàng, hoặc hóa đơn
-                                                        mua hàng.</p>
-                                                    <p>Chỉ bảo hành do lỗi của nhà sản xuất, sản phẩm rơi vỡ hư hỏng do
-                                                        lỗi của khách hàng sẽ từ chối bảo hành. </p>
-                                                    <h6>Khuyến cáo sử dụng:</h6>
-                                                    <p>Sử dụng dây dẫn điện có tiết diện đảm bảo điện áp.</p>
-                                                    <p>Sử dụng đúng chức năng và đúng công suất của máy móc.</p>
-                                                    <p>Sử dụng phụ tùng và phụ kiện chính hãng để đảm bảo tuổi thọ.</p>
-                                                    <h6>Hỗ trợ bảo hành 24/24.</h6>
-                                                    <p>Nhân viên bảo hành:Chu Văn Long/Chu Văn Chung.</p>
-                                                    <p>Sđt hỗ trợ bh từ xa:0338799081.</p>
-                                                    <p>sđt xếp lịch bảo hành:0969904841.</p>
-                                                    <p>Địa chỉ bảo hành:Ql48, Tuần B, Quỳnh Châu, Quỳnh Lưu, Nghệ An.
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade modal-wrapper" id="mymodal6">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <ul>
-                                        <li>
-                                            <h3 class="review-page-title">Hướng dẫn mua hàng </h3>
-                                            <button class="close1" title="Đóng">
-                                                <a href="#" class="fa fa-close" data-dismiss="modal"></a>
-
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <div class="li-review-content">
-                                                    <h6>Thời gian bảo hành: <p>6 tháng-1 năm</p>
-                                                    </h6>
-                                                    <h6>Điều kiện bảo hành:</h6>
-                                                    <p>Sản phẩm còn thời gian bảo hành.</p>
-                                                    <p>Phiếu bảo hành còn nguên vẹn có chữ ký của cửa hàng, hoặc hóa đơn
-                                                        mua hàng.</p>
-                                                    <p>Chỉ bảo hành do lỗi của nhà sản xuất, sản phẩm rơi vỡ hư hỏng do
-                                                        lỗi của khách hàng sẽ từ chối bảo hành. </p>
-                                                    <h6>Khuyến cáo sử dụng:</h6>
-                                                    <p>Sử dụng dây dẫn điện có tiết diện đảm bảo điện áp.</p>
-                                                    <p>Sử dụng đúng chức năng và đúng công suất của máy móc.</p>
-                                                    <p>Sử dụng phụ tùng và phụ kiện chính hãng để đảm bảo tuổi thọ.</p>
-                                                    <h6>Hỗ trợ bảo hành 24/24.</h6>
-                                                    <p>Nhân viên bảo hành:Chu Văn Long/Chu Văn Chung.</p>
-                                                    <p>Sđt hỗ trợ bh từ xa:0338799081.</p>
-                                                    <p>sđt xếp lịch bảo hành:0969904841.</p>
-                                                    <p>Địa chỉ bảo hành:Ql48, Tuần B, Quỳnh Châu, Quỳnh Lưu, Nghệ An.
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Block Area End Here -->
-                    <!-- Begin Footer Block Area -->
-                    <div class="col-lg-4">
-                        <div class="footer-block">
-                            <h3 class="footer-block-title">Theo dõi chúng tôi:</h3>
-                            <ul class="social-link">
-                                <li class="twitter">
-                                    <a href="https://twitter.com/" data-toggle="tooltip" target="_blank"
-                                        title="Twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="rss">
-                                    <a href="https://rss.com/" data-toggle="tooltip" target="_blank" title="RSS">
-                                        <i class="fa fa-rss"></i>
-                                    </a>
-                                </li>
-                                <li class="google-plus">
-                                    <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank"
-                                        title="Google Plus">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                </li>
-                                <li class="facebook">
-                                    <a href="https://www.facebook.com/profile.php?id=100033862597629"
-                                        data-toggle="tooltip" target="_blank" title="Facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="youtube">
-                                    <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank"
-                                        title="Youtube">
-                                        <i class="fa fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li class="instagram">
-                                    <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank"
-                                        title="Instagram">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Begin Footer Newsletter Area -->
-
-                        <!-- Footer Newsletter Area End Here -->
-                    </div>
-                    <!-- Footer Block Area End Here -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer Static Middle Area End Here -->
-
-    <!-- Quick View | Modal Area End Here -->
+        <!-- Quick View | Modal Area End Here -->
     </div>
     <!-- Body Wrapper End Here -->
     <!-- jQuery-V1.12.4 -->
@@ -1514,7 +973,27 @@
     <!-- Main/Activator js -->
     <script src="js/main.js"></script>
 
-    <script src="js/callapi/NewProductAPI.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+    <script src="js/callapi/IndexAPI.js"></script>
+    <script src="js/callapi/ShareApi.js"></script>
 </body>
 
 <!-- index30:23-->
