@@ -44,16 +44,16 @@ $(document).ready(function(){
                              </p>
                          </div>
                         <div class="single-add-to-cart">
-                             <form action="#" class="cart-quantity">
+                             <form id="add_cart_2" class="cart-quantity">
                                  <div class="quantity">
                                      <label>Số lượng</label>
                                      <div class="cart-plus-minus">
-                                         <input class="cart-plus-minus-box" value="1" type="text">
-                                         <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                         <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                     
+                                     <input style="max-width : 100%" type="number" min= "1" value="1" id="qty" class="cart-plus-minus-box">
+                                 
                                      </div>
                                  </div>
-                                 <button class="add-to-cart"  type="submit"><a href="shopping-cart.html" style="color: black;">Thêm vào giỏ hàng</a></button>
+                                 <button class="add-to-cart"><a onClick = 'addToCart(${productDetail.pro_id})'>Thêm vào giỏ hàng</a></button>
                              </form>
                          </div>
                          <div class="product-additional-info pt-25">
@@ -114,6 +114,6 @@ $(document).ready(function(){
             }
         })
     }
-
+    
     productDetail();
 });

@@ -17,6 +17,7 @@ $(document).ready(function(){
                         if(localStorage.getItem("id") == item.account.id){
                             let price = new Intl.NumberFormat('en-DE');
                             price = price.format(item.product.price);
+
                             
                             context += `<tr>
                             <td class="li-product-remove"><a onClick = 'removeItem(${item.id});'><i class="fa fa-times"></i></a></td>
@@ -27,12 +28,12 @@ $(document).ready(function(){
                                 <input style="max-width : 20%" type="number" id="qty" class="cart-plus-minus-box" value="${item.quantity}" required="Không thể để trống">
                             </td>
                             <td class="product-subtotal"><span class="amount">${item.quantity*item.product.price} vnđ</span></td>
-                            <td class="li-product-remove"><span class="amount"><input type="checkbox"></input></span></td>
+                            <td class="li-product-remove"><a onClick = 'check(${item.id},${item.product.price});'><i class="fa fa-check"></i></a></td>
                         </tr>`;
                         }
                         console.log(context);
                         $("#cart_list").html(context);
-                    })
+                    });
                 },
                 error: function (err) {
                     console.log(err)

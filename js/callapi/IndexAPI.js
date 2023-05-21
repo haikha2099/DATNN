@@ -17,7 +17,7 @@ $(document).ready(function(){
                     <div class="single-product-wrap">
                         <div class="product-image">
                             <a href="single-product.html">
-                                <img style="height:150px"  src=${item.image_url}
+                                <img style="height:200px"  src=${item.image_url}
                                     alt="Li's Product Image">
                             </a>
                             <span class="sticker">New</span>
