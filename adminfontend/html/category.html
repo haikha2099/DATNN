@@ -1,0 +1,43 @@
+<div class="container-fluid p-0">
+
+    <p id = "error_message_authentication" style="color:red;text-align:center;"></p>
+    <h1 class="h3 mb-3">Category List</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                
+                <div class="card-header" id="card_header_category">
+                    <div class="row-header table-header-options">
+                        <div class="form-control search-input">
+                            <input id="search_input_category" type="text" placeholder="Search by name..." spellcheck="false">
+                            <i class="material-icons icon-actions icon-close">&#xe5cd;</i>
+                            <i id="icon_search_category" 
+                                class="material-icons icon-search"
+                            >
+                                &#xe8b6;
+                            </i>
+                        </div>
+                        <div>
+                            <button id="btn_refresh_category" class="btn-modal icon-refresh"><i
+                                    class="material-icons icon-actions">&#xe863;</i></button>
+                            <button id="btn_add_category" class="btn-modal icon-add" data-toggle="modal"
+                                data-target="#defaultModalWarning"><i
+                                    class="material-icons icon-actions">&#xea20;</i></button>
+                            <button id="btn_delete_multiple_category" class="btn-modal icon-delete">
+                                <i class="material-icons icon-actions">&#xE872;</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table id="datatables_categories" class="table table-striped" style="width:100%">
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

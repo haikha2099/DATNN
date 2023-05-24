@@ -1,0 +1,127 @@
+<div class="container-fluid p-0">
+
+    <h1 class="h3 mb-3">Product List</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row-header">
+                    </div>
+                    <div class="row-header table-header-options">
+                        <div class="form-control search-input search-product">
+                            <input id="search_input_product" type="text" placeholder="Search by name...">
+                            <i id="icon_serach_product" class="material-icons icon-search">&#xe8b6;</i>
+                        </div>
+                        <div>
+                            <button id="btn_refresh_product" class="btn-modal icon-refresh"><i
+                                    class="material-icons icon-actions">&#xe863;</i></button>
+                            <button id="btn_add_product" class="btn-modal icon-add" data-toggle="modal"
+                                data-target="#defaultModalWarning2"><i
+                                    class="material-icons icon-actions">&#xea20;</i></button>
+                            <button id="btn_delete_multi_deparment" class="btn-modal icon-delete">
+                                <i class="material-icons icon-actions">&#xE872;</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table id="datatables_products" class="table table-striped" style="width:100%">
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- BEGIN delete product warning modal -->
+<div class="modal fade" id="defaultModalDanger2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Delete product</h3>
+                <button id="btn_close_delete_product" type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body m-3">
+                <p class="mb-0">Are you sure you want to delete your product?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="btn_no_product" type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button id="btn_confirm_delete_product" type="button" class="btn btn-danger">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END delete deoartment warning modal -->
+
+<!-- BEGIN add account modal -->
+<!--END add account modal -->
+<!-- BEGIN edit deppartment modal -->
+<div class="modal fade" id="defaultModalWarning2" tabindex="-1" role="dialog"> <!---Form Acount --->
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="title_form_product" class="modal-title">Create New product</h3>
+                <button id="btn_close_form_product" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body m-3">
+                <form id="form_product">
+                    <div class="form-group">
+                        <label>Product Name</label>
+                        <input id="pro_name" class="form-control form-control-lg" type="text" name="pro_name"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Describe</label>
+                        <input id="pro_describe" class="form-control form-control-lg" type="text" name="pro_describe"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input id="price" class="form-control form-control-lg" type="text" name="price"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Image</label>
+                        <input id="image_url" class="form-control form-control-lg" type="text" name="image_url"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantity</label>
+                        <input id="quantity" class="form-control form-control-lg" type="text" name="quantity"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Detail</label>
+                        <input id="pro_detail" class="form-control form-control-lg" type="text" name="pro_detai"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Size</label>
+                        <input id="size" class="form-control form-control-lg" type="text" name="size"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>cg_id</label>
+                        <input id="cg_id" class="form-control form-control-lg" type="text" name="cg_id"
+                            placeholder="" required>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button id="btn_save_product" type="submit" class="btn btn-primary">Save</button>
+                        <button id="btn_dismiss_form_product" type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END eidt product modal -->
