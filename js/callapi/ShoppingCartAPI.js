@@ -18,7 +18,11 @@ $(document).ready(function(){
                             let price = new Intl.NumberFormat('en-DE');
                             price = price.format(item.product.price);
 
-                            
+                            let totalPrice = new Intl.NumberFormat('en-DE');
+                            totalPrice = totalPrice.format(item.quantity*item.product.price);
+
+                            let proName = item.product.pro_name;
+
                             context += `<tr>
                             <td class="li-product-remove"><a onClick = 'removeItem(${item.id});'><i class="fa fa-times"></i></a></td>
                             <td class="li-product-thumbnail"><a href="#"><img src=${item.product.image_url} style="width: 100px; height:80px;" alt=""></a></td>
@@ -27,8 +31,8 @@ $(document).ready(function(){
                             <td class="quantity">
                                 <input style="max-width : 20%" type="number" id="qty" class="cart-plus-minus-box" value="${item.quantity}" required="Không thể để trống">
                             </td>
-                            <td class="product-subtotal"><span class="amount">${item.quantity*item.product.price} vnđ</span></td>
-                            <td class="li-product-remove"><a onClick = 'check(${item.id},${item.product.price});'><i class="fa fa-check"></i></a></td>
+                            <td class="product-subtotal"><span class="amount">${totalPrice} vnđ</span></td>
+                            <td class="li-product-remove"><a onClick = 'addOrdersItem(${item.id},${item.product.price});'><i class="fa fa-check"></i></a></td>
                         </tr>`;
                         }
                         console.log(context);

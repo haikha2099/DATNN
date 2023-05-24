@@ -47,7 +47,7 @@ $(document).ready(function(){
     //     localStorage.removeItem("pro_id_detail");
     // }
 
-    clearItem();
+   // clearItem();
 
     getOrders();
 })

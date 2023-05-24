@@ -120,9 +120,7 @@
                                                     class="li-button li-button-fullwidth li-button-dark">
                                                     <span>Xem giỏ hàng</span>
                                                 </a>
-                                                <a href="checkout.html" class="li-button li-button-fullwidth">
-                                                    <span>Thanh toán</span>
-                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </li>
@@ -496,31 +494,34 @@
             })
         }
     </script>
-
+<!-- 
 <script type="text/javascript">
-    function check(id,price) {
-        // $.ajax({
-        //     type: "delete",
-        //     url: "http://localhost:8888/api/cart/delete/" + id,
+    function check(id,price,proName) {
+        $.ajax({
+            type: "delete",
+            url: "http://localhost:8888/api/cart/delete/" + id,
 
-        //     success: function (response) {
-        //         alert("Đã xóa sản phẩm khỏi giỏ hàng!");
-        //         window.location.href = "shopping-cart.html"
-        //     },
-        //     error: function (err) {
-        //         console.log(err)
-        //     }
-        // })
+            success: function (response) {
+                alert("Đã xóa sản phẩm khỏi giỏ hàng!");
+                window.location.href = "shopping-cart.html"
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+        //alert("Đặt hàng thành công!")
+        //removeItem(id);
         console.log(price);
         console.log(id);
+        
     }
-</script>
+</script> -->
 
-    <!-- <script type="text/javascript">
-        function addOrdersItem(cartid,proName,price) {
+    <script type="text/javascript">
+        function addOrdersItem(cartid,price) {
 
         let data = {
-            "name_product" :proName,
+            "name_product" :"proName",
             "price": price,
             "account":{
                 "id": localStorage.getItem("id")
@@ -544,7 +545,7 @@
                 }
             })
         }
-    </script> -->
+    </script>
 </body>
 
 <!-- shopping-cart31:32-->

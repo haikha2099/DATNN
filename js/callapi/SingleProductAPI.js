@@ -8,6 +8,10 @@ $(document).ready(function(){
             success: function (results) {
                 console.log(results)
                 let productDetail = results;
+
+                let price = new Intl.NumberFormat('en-DE');
+                price = price.format(productDetail.price);
+
                 let context = "";
                 console.log(productDetail)
                 context=`
@@ -29,7 +33,7 @@ $(document).ready(function(){
                      <div class="product-info">
                          <h2>${productDetail.pro_name}</h2>
                          <div class="price-box pt-20">
-                             <span class="new-price new-price-2">${productDetail.price}đ</span>
+                             <span class="new-price new-price-2">${price}đ</span>
                          </div>
                          <div class="product-desc">
                              <p>
